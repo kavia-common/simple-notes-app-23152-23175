@@ -1,82 +1,44 @@
-# Lightweight React Template for KAVIA
+# Simple Notes App — Ocean Professional Theme
 
-This project provides a minimal React template with a clean, modern UI and minimal dependencies.
+A modern, clean notes application built with React and vanilla CSS. It features a sidebar notes list and a main editor with create, view, edit, and delete capabilities. Notes are saved locally in your browser (localStorage).
 
 ## Features
 
-- **Lightweight**: No heavy UI frameworks - uses only vanilla CSS and React
-- **Modern UI**: Clean, responsive design with KAVIA brand styling
-- **Fast**: Minimal dependencies for quick loading times
-- **Simple**: Easy to understand and modify
+- Sidebar list of notes with active state
+- Create (+ New Note), select, edit title and content, and delete notes
+- Auto-save to localStorage
+- Ocean Professional theme:
+  - Blue (#2563EB) and amber (#F59E0B) accents
+  - Clean surfaces, subtle gradients, rounded corners, and smooth transitions
+  - Light/Dark toggle with refined contrast
 
 ## Getting Started
 
-In the project directory, you can run:
+In the project directory, run:
 
 ### `npm start`
-
-Runs the app in development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Starts the app in development mode at http://localhost:3000.
 
 ### `npm test`
-
-Launches the test runner in interactive watch mode.
+Runs the test suite.
 
 ### `npm run build`
+Builds the app for production to the `build` folder.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Project Structure
+
+- `src/App.js`: Main application, state, and UI composition
+- `src/App.css`: Theme tokens and component styles
+- `src/index.js`: React entry point
+- `src/App.test.js`: Basic render test
 
 ## Customization
 
-### Colors
+- Theme tokens are defined in `src/App.css` under `:root` and `[data-theme="dark"]`.
+- Update colors, radii, and shadows to tweak the Ocean Professional look.
 
-The main brand colors are defined as CSS variables in `src/App.css`:
+## Notes on Data
+- The app stores notes in `localStorage` under the key `notes_app__notes`.
+- No backend is required for this version.
 
-```css
-:root {
-  --kavia-orange: #E87A41;
-  --kavia-dark: #1A1A1A;
-  --text-color: #ffffff;
-  --text-secondary: rgba(255, 255, 255, 0.7);
-  --border-color: rgba(255, 255, 255, 0.1);
-}
-```
-
-### Components
-
-This template uses pure HTML/CSS components instead of a UI framework. You can find component styles in `src/App.css`. 
-
-Common components include:
-- Buttons (`.btn`, `.btn-large`)
-- Container (`.container`)
-- Navigation (`.navbar`)
-- Typography (`.title`, `.subtitle`, `.description`)
-
-## Learn More
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Enjoy building!
